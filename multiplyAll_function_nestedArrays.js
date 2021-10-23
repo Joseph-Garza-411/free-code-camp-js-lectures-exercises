@@ -2,7 +2,11 @@ function multiplyAll(arr){
     let product = 1; 
     // Only change code below this line 
         for(let i = 0; i < arr.length; i++){
-            console.log(arr[i]); 
+            // console.log(arr[i]); 
+            for(let j = 0; j < arr[i].length; j++){
+                // console.log(arr[i][j]);
+                product *= arr[i][j]; js
+            }
         }
         
     //Only change code above this line 

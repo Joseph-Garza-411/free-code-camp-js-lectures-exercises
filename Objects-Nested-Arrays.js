@@ -25,22 +25,30 @@
 // console.log(arr[5]);  
 
 
-var myNoun = " dog";
-var myAdjective = " big";
-var myVerb = " ran";
-var myAdverb = " quickly";
+// var myNoun = " dog";
+// var myAdjective = " big";
+// var myVerb = " ran";
+// var myAdverb = " quickly";
 
-// Only change code below this line
-    myAdjective += myNoun;
-    myVerb +=  myAdverb; 
-    myAdjective += myVerb; 
-    var wordBlanks = "That" + myAdjective + "."; // Change this line
-// Only change code above this line
+// // Only change code below this line
+//     myAdjective += myNoun;
+//     myVerb +=  myAdverb; 
+//     myAdjective += myVerb; 
+//     var wordBlanks = "That" + myAdjective + "."; // Change this line
+// // Only change code above this line
 
-// console.log(myAdjective); 
-// console.log(myVerb); 
-console.log(wordBlanks); 
+// // console.log(myAdjective); 
+// // console.log(myVerb); 
+// console.log(wordBlanks); 
 
+
+
+function timesFive(int){
+    return int * 5 ; 
+}
+
+let answer = timesFive(5); 
+console.log(answer); 
 
 
 

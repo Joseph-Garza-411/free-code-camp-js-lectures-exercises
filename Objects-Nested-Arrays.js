@@ -42,13 +42,26 @@
 // console.log(wordBlanks); 
 
 
+function nextInLine(arr, item) {
+    // Only change code below this line
+    let localM = arr.push(item); 
+    
+    return arr.shift();
+    // Only change code above this line
+    
+  
+  }
+  
+  // Setup
+  var testArr = [1,2,3,4,5];
+  
+  // Display code
+  console.log("Before: " + JSON.stringify(testArr));
+  console.log(nextInLine(testArr, 6));
+  console.log("After: " + JSON.stringify(testArr));
+//   console.log(arr.length); 
 
-function timesFive(int){
-    return int * 5 ; 
-}
 
-let answer = timesFive(5); 
-console.log(answer); 
 
 
 

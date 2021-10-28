@@ -178,6 +178,13 @@ const ourDog = {
   "tails" :  1 , 
   "friends" : ["everything"]
 } 
+
+ourDog.bark = "bow-wow"; 
+
+
+
 console.log(ourDog); 
-ourDog.name = "Happy Camper";
-console.log("The new name of our doggo is: " + ourDog["name"]); 
+// ourDog.name = "Happy Camper";
+// console.log("The new name of our doggo is: " + ourDog["name"]); 
+// ourDog["name"] = " Happy Happy Coder"; 
+// console.log("The latest name of our doggo is now: " + ourDog["name"]); 

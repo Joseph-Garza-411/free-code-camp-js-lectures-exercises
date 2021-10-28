@@ -126,24 +126,58 @@
 // console.log(cc("A"));
 // console.log(cc("K")); 
 
-const cat = {
-  "name" : "Whiskers", 
-  "legs" : 4, 
-  "tails": 1, 
-  "enemies": ["Water" , " and Dogs"]
-}; 
+// const cat = {
+//   "name" : "Whiskers", 
+//   "legs" : 4, 
+//   "tails": 1, 
+//   "enemies": ["Water" , " and Dogs"]
+// }; 
 
-console.log(cat.name); 
-console.log("Latest known alias: " + cat.name +  `\n`  + "Latest known enemies: " + cat.enemies+ '\n' +  "Number of limbs:" +  ` ` + cat.legs); 
-
-
-const myDog = {
-  "name" : "Schoop", 
-  "legs" : 3, 
-  "tails" : 1, 
-  "friends" : ["Joseph", " and Pat"]
-}
-
-console.log("Latest known alias: " + myDog.name +  `\n`  + "Greatest friends: " + myDog.friends+ '\n' +  "Number of limbs:" +  ` ` + myDog.legs); 
+// console.log(cat.name); 
+// console.log("Latest known alias: " + cat.name +  `\n`  + "Latest known enemies: " + cat.enemies+ '\n' +  "Number of limbs:" +  ` ` + cat.legs); 
 
 
+// const myDog = {
+//   "Name One" : "Schoop Schoop", 
+//   "legs" : 4, 
+//   "tails" : 1, 
+//   "friends" : ["Joseph", " and Pat"]
+// }
+
+// console.log("Latest known alias: " + myDog["Name One"] +  `\n`  + "Greatest friends: " + myDog.friends+ '\n' +  "Number of limbs:" +  ` ` + myDog.legs); 
+
+
+// const dogs = {
+//   Fido: "Mutt" , 
+//   Hunter: "Doberman" , 
+//   Snoopie: "Beagle"  
+// }
+
+// const myDog = "Hunter"; 
+// const myBreed = dogs[myDog]; 
+// console.log(myBreed); 
+// console.log(dogs["Fido"]); 
+
+// Setup
+// const testObj = {
+//   12: "Namath",
+//   16: "Montana",
+//   19: "Unitas"
+// };
+
+// // Only change code below this line
+// const playerNumber = 16;       // Change this line
+// console.log(playerNumber); 
+// const player = testObj[playerNumber];   // Change this line
+// console.log(player); 
+
+
+const ourDog = { 
+  "name" :  "Camper" , 
+  "legs" :  4 , 
+  "tails" :  1 , 
+  "friends" : ["everything"]
+} 
+console.log(ourDog); 
+ourDog.name = "Happy Camper";
+console.log("The new name of our doggo is: " + ourDog["name"]); 

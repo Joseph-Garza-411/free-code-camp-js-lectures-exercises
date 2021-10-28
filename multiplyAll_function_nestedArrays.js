@@ -85,44 +85,65 @@
 // }
 
 // isLess(10, 15);
-let count = 0;
-function cc(card) {
-  // Only change code below this line
-   switch (card){
-      case 2:
-      case 3: 
-      case 4:
-      case 5:
-      case 6:
-        count++; 
-        break; 
-      case 10:
-      case "J":
-      case "Q":
-      case "K":
-      case "A":
-        count --; 
-        break; 
-   }
+// let count = 0;
+// function cc(card) {
+//   // Only change code below this line
+//    switch (card){
+//       case 2:
+//       case 3: 
+//       case 4:
+//       case 5:
+//       case 6:
+//         count++; 
+//         break; 
+//       case 10:
+//       case "J":
+//       case "Q":
+//       case "K":
+//       case "A":
+//         count --; 
+//         break; 
+//    }
 
-  let holdbet = ' Hold'; 
-  if (count > 0){
-    holdbet = ' Bet'; 
-  }
+//   let holdbet = ' Hold'; 
+//   if (count > 0){
+//     holdbet = ' Bet'; 
+//   }
 
-   return count + holdbet;
+//    return count + holdbet;
   // Only change code above this line
-}
+// }
 
 
 // console.log(cc("K")); 
 // console.log(cc("Q")); 
 // console.log(cc("j")); 
 // console.log(cc(10)); 
-console.log(cc(5)); 
-console.log(cc(5));
-console.log(cc(2)); 
-console.log(cc(1)); 
+// console.log(cc(5)); 
+// console.log(cc(5));
+// console.log(cc(2)); 
+// console.log(cc(1)); 
+// console.log(cc("A"));
+// console.log(cc("K")); 
 
+const cat = {
+  "name" : "Whiskers", 
+  "legs" : 4, 
+  "tails": 1, 
+  "enemies": ["Water" , " and Dogs"]
+}; 
+
+console.log(cat.name); 
+console.log("Latest known alias: " + cat.name +  `\n`  + "Latest known enemies: " + cat.enemies+ '\n' +  "Number of limbs:" +  ` ` + cat.legs); 
+
+
+const myDog = {
+  "name" : "Schoop", 
+  "legs" : 3, 
+  "tails" : 1, 
+  "friends" : ["Joseph", " and Pat"]
+}
+
+console.log("Latest known alias: " + myDog.name +  `\n`  + "Greatest friends: " + myDog.friends+ '\n' +  "Number of limbs:" +  ` ` + myDog.legs); 
 
 

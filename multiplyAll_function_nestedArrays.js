@@ -88,25 +88,41 @@
 let count = 0;
 function cc(card) {
   // Only change code below this line
-   
-  if(card < 7){
-    count += 1; 
-  }else if (card == 10 || typeof(card) == typeof("string")){
-    count -= 1; 
+   switch (card){
+      case 2:
+      case 3: 
+      case 4:
+      case 5:
+      case 6:
+        count++; 
+        break; 
+      case 10:
+      case "J":
+      case "Q":
+      case "K":
+      case "A":
+        count --; 
+        break; 
+   }
+
+  let holdbet = ' Hold'; 
+  if (count > 0){
+    holdbet = ' Bet'; 
   }
 
-  let msg = ""; 
-  if (count <= 0){
-    msg = " Hold"; 
-  }else if (count > 0){
-    msg = " Bet"; 
-  }
-  return count + msg;
+   return count + holdbet;
   // Only change code above this line
 }
 
 
+// console.log(cc("K")); 
+// console.log(cc("Q")); 
+// console.log(cc("j")); 
+// console.log(cc(10)); 
 console.log(cc(5)); 
+console.log(cc(5));
+console.log(cc(2)); 
+console.log(cc(1)); 
 
 
 

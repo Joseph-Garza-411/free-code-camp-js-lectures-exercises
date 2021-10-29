@@ -172,19 +172,85 @@
 // console.log(player); 
 
 
-const ourDog = { 
-  "name" :  "Camper" , 
-  "legs" :  4 , 
-  "tails" :  1 , 
-  "friends" : ["everything"]
-} 
+// const ourDog = { 
+//   "name" :  "Camper" , 
+//   "legs" :  4 , 
+//   "tails" :  1 , 
+//   "friends" : ["everything"]
+// } 
 
-ourDog.bark = "bow-wow"; 
+// ourDog.bark = "bow-wow"; 
 
 
 
-console.log(ourDog); 
-// ourDog.name = "Happy Camper";
-// console.log("The new name of our doggo is: " + ourDog["name"]); 
-// ourDog["name"] = " Happy Happy Coder"; 
-// console.log("The latest name of our doggo is now: " + ourDog["name"]); 
+// console.log(ourDog); 
+// // ourDog.name = "Happy Camper";
+// // console.log("The new name of our doggo is: " + ourDog["name"]); 
+// // ourDog["name"] = " Happy Happy Coder"; 
+// // console.log("The latest name of our doggo is now: " + ourDog["name"]); 
+
+
+/* The following snippet of code is an activity that is designed to teach the learner how to 
+transform a switch statement into an object that called "lookup" which will assign the associated
+string to the "result" variable. 
+
+// Only change code below this line
+ switch(val) {
+    case "alpha":
+      result = "Adams";
+      break;
+    case "bravo":
+      result = "Boston";
+      break;
+    case "charlie":
+      result = "Chicago";
+      break;
+    case "delta":
+      result = "Denver";
+      break;
+    case "echo":
+      result = "Easy";
+      break;
+    case "foxtrot":
+      result = "Frank";
+  }
+
+  // Only change code above this line
+  return result;
+}
+
+phoneticLookup("charlie");
+*/ 
+
+// Setup
+function phoneticLookup(val) {
+  let result = "";
+
+  // Only change code below this line
+  let lookup = { // Transform the switch statement into an object called lookup. 
+     "alpha": "Adams",
+     "bravo": "Boston",
+     "charlie":"Chicago",
+     "delta":"Denver",
+     "echo": "Easy",
+     "foxtrot": "Frank"
+  }
+  // assign the associated string to the "result" variable
+  result = lookup[val]; 
+  // Only change code above this line
+  return result;
+}
+
+phoneticLookup("charlie");
+phoneticLookup("alpha");
+  
+
+
+
+
+
+
+
+
+
+

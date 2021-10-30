@@ -309,7 +309,25 @@ const myMusic = [
   }
 ];
 
- console.log(myMusic); 
+myMusic.push(
+  {
+    "artist": "Wildman",
+    "title" : "The Incredible Song", 
+    "release_year" : 1999, 
+    "formats" : [
+      "CD", 
+      "LP"
+    ], 
+    "gold": true
+  }
+); 
+
+
+ 
+
+//  console.log(myMusic); 
+//  console.log(myMusic.length); 
+console.log(myMusic[1]);
 
 
 

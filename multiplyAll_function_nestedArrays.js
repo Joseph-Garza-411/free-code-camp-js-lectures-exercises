@@ -222,6 +222,7 @@ string to the "result" variable.
 phoneticLookup("charlie");
 */ 
 
+/*
 // Setup
 function phoneticLookup(val) {
   let result = "";
@@ -241,9 +242,75 @@ function phoneticLookup(val) {
   return result;
 }
 
-phoneticLookup("charlie");
-phoneticLookup("alpha");
+console.log(phoneticLookup("charlie"));
+console.log(phoneticLookup("alpha"));
   
+*/ 
+
+
+/* .hasOwnProperty(propname) -- 
+We can use the .hasOwnPropertyName(propname) method of objects to determine if 
+that object has the given property name. .hasOwnProperty() returns true if the property is found, 
+false if otherwise. 
+
+*/ 
+
+//Example 
+
+// const myObj = {
+//   top: "hat", 
+//   bottom: "pants", 
+
+// }; 
+// console.log(myObj.hasOwnProperty("top")); 
+// console.log(myObj.hasOwnProperty("middle")); 
+
+ /*
+Instructions: Modify the function checkObj to test if an object passed to the function (obj) contains 
+"checkProp". If it is found, return that value, otherwise return false. 
+*/
+// function checkObj(obj, checkProp) {
+ 
+//   // test if an object passed contains "checkProp"
+//   if (obj.hasOwnProperty(checkProp){
+//     return obj[checkProp]; 
+//   // If it is found, return that value, otherwise return false.
+//     return answer;
+//   } else { 
+//     return " Not Found"; 
+//   }
+//  }
+
+/* Post Challenge Observations: 
+Just a few notes and observations concerning this exercise: 
+I need to be careful when entering the code that targets the desired object, e.g. 
+in the if statement = if(obj.hasOwnProperty(checkProp)) as we are looking up a 
+value of the object named obj and we do not wrap  - checkProp in quotations 
+as it is the actual value that we are looking for. 
+*/ 
+
+
+/* 
+Add a new album to the myMusic array. Add artist and title strings, 
+release_year number and a formats array of strings. 
+*/ 
+
+const myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  }
+];
+
+ console.log(myMusic); 
+
 
 
 

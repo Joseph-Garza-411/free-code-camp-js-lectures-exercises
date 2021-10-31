@@ -434,14 +434,14 @@ release_year number and a formats array of strings.
 //   myArray.push(i); 
 // }
 // console.log(myArray); 
-const myArr = [2, 3, 4, 5, 6];
-  let total = 0; 
-  for (let i = 0; i < myArr.length; i++){
-    total += myArr[i]; 
+// const myArr = [2, 3, 4, 5, 6];
+//   let total = 0; 
+//   for (let i = 0; i < myArr.length; i++){
+//     total += myArr[i]; 
     
-    console.log(total); 
+//     console.log(total); 
     
-}
+// }
 
 // const arr = [10, 9, 8, 7, 6];
 
@@ -451,5 +451,19 @@ const myArr = [2, 3, 4, 5, 6];
 
 // console.log(arr.length);
 
+// function multiplyAll(arr) {
+//   let product = 1;
+//   // Only change code below this line
+//   for (let i = 0; i < arr.length; i++){
+//       for (let j = 0; j < arr[i].length; j++){
+//         console.log(arr[i][j]); 
+//       }
+//   }
+
+//   // Only change code above this line
+//   return product;
+// }
+
+// multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
 
 

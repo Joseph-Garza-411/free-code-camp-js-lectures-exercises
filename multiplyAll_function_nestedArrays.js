@@ -466,4 +466,99 @@ release_year number and a formats array of strings.
 
 // multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
 
+// function multiply(arr, n) {
+//   let product = 1;
+//   for (let i = 0; i < n; i++) {
+//     product *= arr[i];
+//   }
+//   return product;
+// }
 
+
+// function countDown(n){
+//   for (let i = n; i > 0; i--){
+//   console.log(i) 
+//   }
+//   console.log('Hooray'); 
+//   }
+//  countDown(10);
+
+
+// function countDownRecursive (n){
+//   if( n <= 0){
+//     console.log('Hooray'); 
+//     return 
+//   }
+//   console.log(n); 
+//   countDownRecursive(n -1); 
+// }
+
+// countDownRecursive(4)
+
+
+
+
+
+// function sumRange(n){
+//   let total = 0; 
+//   for (let i = n; i > 0; i--){
+//     total += i; 
+//   }
+//   return total; 
+// }
+// console.log(sumRange(6)); 
+// console.log(sumRange(3)); 
+
+// function sumRangeRecursive (n, total = 0) {
+//   if (n <= 0){
+//     return total 
+//   }
+//     return sumRangeRecursive(n - 1, total + n)
+// }
+
+
+// console.log(sumRangeRecursive(3)); 
+
+// printChildrenRecursive(tree)
+
+// function printChildrenRecursive(t){
+//   if (t.children === 0){
+//    return; 
+//   } 
+//   t.children.forEach(child =>{
+//     console.log(child.name); 
+//   })  
+
+// }
+
+
+const tree = { 
+  name: 'John', 
+  children: [
+    {
+      name: 'Jim', 
+      children:[]
+    }, 
+    {
+      name: 'Zoe', 
+      children: [
+        {name: 'Kyle', children: []},
+        {name: 'Sophia', children: []}
+      ]
+    }
+  ]
+}
+
+
+function printChildrenRecursive(t){
+  if (t.children === 0){
+   return; 
+  } 
+  t.children.forEach(child =>{
+    console.log(child.name); 
+    printChildrenRecursive(child); 
+  })  
+
+}
+
+printChildrenRecursive(tree); 

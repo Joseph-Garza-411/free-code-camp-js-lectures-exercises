@@ -550,15 +550,60 @@ const tree = {
 }
 
 
-function printChildrenRecursive(t){
-  if (t.children === 0){
-   return; 
-  } 
-  t.children.forEach(child =>{
-    console.log(child.name); 
-    printChildrenRecursive(child); 
-  })  
+// function printChildrenRecursive(t){
+//   if (t.children === 0){
+//    return; 
+//   } 
+//   t.children.forEach(child =>{
+//     console.log(child.name); 
+//     printChildrenRecursive(child); 
+//   })  
 
+// }
+
+// printChildrenRecursive(tree); 
+
+// Setup
+const contacts = [
+  {
+    firstName: "Akira",
+    lastName: "Laine",
+    number: "0543236543",
+    likes: ["Pizza", "Coding", "Brownie Points"],
+  },
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    number: "0994372684",
+    likes: ["Hogwarts", "Magic", "Hagrid"],
+  },
+  {
+    firstName: "Sherlock",
+    lastName: "Holmes",
+    number: "0487345643",
+    likes: ["Intriguing Cases", "Violin"],
+  },
+  {
+    firstName: "Kristian",
+    lastName: "Vos",
+    number: "unknown",
+    likes: ["JavaScript", "Gaming", "Foxes"],
+  },
+];
+
+function lookUpProfile(name, prop) {
+  // Only change code below this line
+  if ( lookUpProfile[name] == contacts['firstname'] && lookUpProfile[name]["prop"] == contacts){
+    return
+  }
+  else if ( lookUpProfile[name] !== contacts.firstName){
+    return "No such contact"; 
+  }
+  else if ( prop = contacts[prop]){
+    return "No such property"; 
+  }
+
+  // Only change code above this line
 }
 
-printChildrenRecursive(tree); 
+console.log(lookUpProfile("Akira", "likes"));

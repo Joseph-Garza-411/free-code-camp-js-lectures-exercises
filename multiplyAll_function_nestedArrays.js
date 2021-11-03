@@ -608,8 +608,15 @@ release_year number and a formats array of strings.
 
 // console.log(lookUpProfile("Akira", "likes"));
 
+console.log(Math.random());
+console.log(Math.random(3)); 
 
 
+let random_Number1 = Math.floor(Math.random() * 5); 
+console.log(random_Number1); 
+let random_Number2 = Math.floor(Math.random() * 10); 
+let random_Number3 = Math.floor(Math.random() * 15); 
+console.log(random_Number1, random_Number2, random_Number3); 
 
 
 

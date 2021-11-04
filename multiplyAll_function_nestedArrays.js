@@ -608,17 +608,81 @@ release_year number and a formats array of strings.
 
 // console.log(lookUpProfile("Akira", "likes"));
 
-console.log(Math.random());
-console.log(Math.random(3)); 
+// console.log(Math.random());
+// console.log(Math.random(3)); 
 
 
-let random_Number1 = Math.floor(Math.random() * 5); 
-console.log(random_Number1); 
-let random_Number2 = Math.floor(Math.random() * 10); 
-let random_Number3 = Math.floor(Math.random() * 15); 
-console.log(random_Number1, random_Number2, random_Number3); 
+// let random_Number1 = Math.floor(Math.random() * 5); 
+// console.log(random_Number1); 
+// let random_Number2 = Math.floor(Math.random() * 10); 
+// let random_Number3 = Math.floor(Math.random() * 15); 
+// console.log(random_Number1, random_Number2, random_Number3); 
 
 
+// Only change code below this line
+// function countdownRecursive(n){
+//   if (n <= 0){
+//        return [];
+//   } else {
+//     let arr = countdownRecursive(n - 1);
+//     arr.unshift(n); 
+//     return arr; 
+//   }
+// }
+// // Only change code above this line
+
+// console.log(countdownRecursive(10)); 
+
+let arr = []; 
+for(let i = 10; i > 0; i--){
+  arr.unshift(i);
+  // console.log(i);   
+  // console.log(arr);
+}
+console.log(arr); 
+
+
+
+
+
+
+let arr1 = []; 
+for(let i = 10; i > 0; i--){
+  arr1.push(i);
+  // console.log(arr1);   
+  // console.log(arr);
+}
+console.log(arr1); 
+
+
+
+// let arrayOne = ["Peanut Butter", "Strawbwerry Jelly", "Grape Jelly"];
+// let arrayTwo = []; 
+
+// function transfersElements (arr) {
+//   for(let i = 0; i < transfersElements.length; i++){
+//     arrayTwo.push(arr);
+//     console.log(arrayTwo);   
+//     // console.log(arr);
+//   }
+// }
+
+// (transfersElements(["Peanut Butter", "Strawbwerry Jelly", "Grape Jelly"])); 
+// console.log(arrayTwo); 
+
+
+// let arr = []; 
+
+// function transfersElements (arr) {
+//   for(let i = 0; i < transfersElements.length; i++){
+//     arr.unshift(arr);
+//     console.log(arr);  
+//     // console.log(arr);
+//   }
+// }
+
+// (transfersElements(["Peanut Butter", "Strawbwerry Jelly", "Grape Jelly"])); 
+// console.log(arr); 
 
 
 

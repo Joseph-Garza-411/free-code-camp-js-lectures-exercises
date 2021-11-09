@@ -633,26 +633,45 @@ release_year number and a formats array of strings.
 
 // console.log(countdownRecursive(10)); 
 
-let arr = []; 
-for(let i = 10; i > 0; i--){
-  arr.unshift(i);
+
+// let twentyThree = 'XXIII';
+// let romanNumerals = ['XXI', 'XXII'];
+
+// romanNumerals.unshift('XX');
+// console.log(romanNumerals);
+// console.log(romanNumerals.shift());
+// console.log(romanNumerals);
+// romanNumerals.unshift('XX');
+// console.log(romanNumerals); 
+// romanNumerals.push(twentyThree); 
+// console.log(romanNumerals); 
+
+
+
+
+
+
+
+// let arr = []; 
+// for(let i = 10; i > 0; i--){
+//   arr.unshift(i);
   // console.log(i);   
   // console.log(arr);
-}
-console.log(arr); 
+// }
+// console.log(arr); 
 
 
 
 
 
 
-let arr1 = []; 
-for(let i = 10; i > 0; i--){
-  arr1.push(i);
+// let arr1 = []; 
+// for(let i = 10; i > 0; i--){
+//   arr1.push(i);
   // console.log(arr1);   
   // console.log(arr);
-}
-console.log(arr1); 
+// }
+// console.log(arr1); 
 
 
 
@@ -687,5 +706,12 @@ console.log(arr1);
 
 
 
-
+// function mixedNumbers(arr){
+//   // change code below this line 
+//   arr.push(7, 'VIII', 9); 
+//   arr.unshift("I", 2, "three");
+//   // change code above this line 
+//   return arr; 
+// }
+// console.log(mixedNumbers(['IV', 5, 'six']))
 

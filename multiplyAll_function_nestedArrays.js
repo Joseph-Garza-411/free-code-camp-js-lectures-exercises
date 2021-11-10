@@ -715,3 +715,56 @@ release_year number and a formats array of strings.
 // }
 // console.log(mixedNumbers(['IV', 5, 'six']))
 
+
+// const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+// // Only change code below this line
+// arr.splice(2, 1);
+// arr.splice(3, 2);
+// // Only change code above this line
+// console.log(arr);
+
+// let weatherConditions = ['rain', 'snow', 'sleet', 'hail', 'clear'];
+
+// let todaysWeather = weatherConditions.slice(1, 3);
+// console.log(todaysWeather); 
+
+
+// function quickCheck(arr, elem) {
+//   // Only change code below this line
+//   for (let i = 0; i < arr.length; i++){
+//     if (arr[elem] == indexOf[arr]){
+//       return true; 
+//     } else {
+//       return false; 
+//     }
+
+//   }
+
+// }
+
+// console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
+
+// function quickCheck(arr, elem) {
+//   if (arr.indexOf(elem) >= 0) {
+//     return true;
+//   }
+//   return false;
+// }
+// console.log(quickCheck(["squash", "onions", "shallots"], "mushrooms"));
+
+
+function filteredArray(arr, elem) {
+  let newArr = [];
+  // Only change code below this line
+  for ( let i = 0; i < arr.length; i++){
+    if (arr[i].indexOf(elem) == -1){
+        newArr.push(arr[i]); 
+     }
+   }
+  // Only change code above this line
+  return newArr;
+}
+
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+

@@ -769,19 +769,41 @@ release_year number and a formats array of strings.
 
 // console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
 
+
+// let nestedArray = [
+//   ['deep'],
+//   [
+//     ['deeper'], ['deeper'] 
+//   ],
+//   [
+//     [
+//       ['deepest'], ['deepest'],  ['Hey'] 
+//     ],
+//     [
+//       [
+//         ['deepest-est?']
+//       ]
+//     ]
+//   ]
+// ];
+
+
+// console.log(nestedArray[0]);
+// console.log(nestedArray[1]);
+// console.log(nestedArray[2]);
+// console.log(nestedArray[3]);
+
+
+
 let myNestedArray = [
   // Only change code below this line
   ['unshift', false, 1, 2, 3, 'complex', 'nested'],
-  [
-  ['loop', 'shift', 6, 7, 1000, 'method']
-  ],
-  [
-    ['concat', false, true, 'spread', 'array']
-  ],  
-  ['mutate', 1327.98, 'splice', 'slice', 'push'],
-  ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth']
+  ['loop', 'shift', 6, 7, 1000, 'method'],
+  ['concat', false, true, 'spread', 'array', ["deep"]],
+  ['mutate', 1327.98, 'splice', 'slice', 'push', [["deeper"]]],
+  ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth', [[["deepest"]]]]
   // Only change code above this line
 ];
 
-console.log(myNestedArray.length);
-console.log(myNestedArray[0]);
+
+console.log(myNestedArray.length)

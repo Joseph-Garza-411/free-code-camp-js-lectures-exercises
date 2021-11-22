@@ -795,15 +795,29 @@ release_year number and a formats array of strings.
 
 
 
-let myNestedArray = [
-  // Only change code below this line
-  ['unshift', false, 1, 2, 3, 'complex', 'nested'],
-  ['loop', 'shift', 6, 7, 1000, 'method'],
-  ['concat', false, true, 'spread', 'array', ["deep"]],
-  ['mutate', 1327.98, 'splice', 'slice', 'push', [["deeper"]]],
-  ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth', [[["deepest"]]]]
-  // Only change code above this line
-];
+// let myNestedArray = [
+//   // Only change code below this line
+//   ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+//   ['loop', 'shift', 6, 7, 1000, 'method'],
+//   ['concat', false, true, 'spread', 'array', ["deep"]],
+//   ['mutate', 1327.98, 'splice', 'slice', 'push', [["deeper"]]],
+//   ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth', [[["deepest"]]]]
+//   // Only change code above this line
+// ];
 
 
-console.log(myNestedArray.length)
+// console.log(myNestedArray.length)
+
+
+function reverseString (str) {
+let arr = []; 
+let arr1 = []; 
+for (let i = str.length - 1; i >= 0; i --){
+  arr.push(str[i]); 
+  arr1 += str[i]; 
+
+}
+ return arr1; 
+}
+
+console.log(reverseString("hello")); 

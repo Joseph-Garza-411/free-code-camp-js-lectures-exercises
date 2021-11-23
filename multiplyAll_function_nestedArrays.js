@@ -823,19 +823,67 @@ release_year number and a formats array of strings.
 // console.log(reverseString("hello")); 
 
 // define a global variable which will hold the word with the greatest number of elements thus far 
-let longestWordThusFar; 
+// let longestWordThusFar; 
 
-function findLongestWordLength(str) {
+// function findLongestWordLength(str) {
 
-  // iterate through the entire string in order to access the length of each word passed in 
-  for ( let i = 0; i < str.length; i++){
-     longestWordThusFar.push(str.length); 
+//   // iterate through the entire string in order to access the length of each word passed in 
+//   for ( let i = 0; i < str.length; i++){
+      
+//      longestWordThusFar.push(str.length); 
        
-  } 
+//   } 
 
-  //return the length of the longest word of the string passed in. 
-  return str.length;
+//   //return the length of the longest word of the string passed in. 
+//   return str.length;
+// }
+
+// findLongestWordLength("The quick brown fox jumped over the lazy dog");
+// console.log(longestWordThusFar); 
+
+// var numArray = [];
+// for (var i = 0; i < 3; i++) {
+//   numArray.push(i);
+// }
+// console.log(numArray);
+// console.log(i);
+
+
+// var numArray = [];
+// var i;
+// for (i = 0; i < 3; i++) {
+//   numArray.push(i);
+// }
+// console.log(numArray);
+// console.log(i);
+
+
+
+// let printNumTwo; 
+// for (let i = 0; i < 3; i++){
+//   if (i === 2){
+//     printNumTwo = function(){
+//       return i; 
+//     }
+//   }
+// }
+
+// console.log(printNumTwo()); 
+// console.log(i);
+
+const s = [5, 7, 2];
+let result; 
+function editInPlace() {
+  // Only change code below this line
+   result = s.pop(); 
+   console.log(s); 
+   console.log(result); 
+   
+
+  // Using s = [2, 5, 7] would be invalid
+
+  s.unshift(result); 
+
+  // Only change code above this line
 }
-
-findLongestWordLength("The quick brown fox jumped over the lazy dog");
-console.log(longestWordThusFar); 
+editInPlace();

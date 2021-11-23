@@ -809,15 +809,33 @@ release_year number and a formats array of strings.
 // console.log(myNestedArray.length)
 
 
-function reverseString (str) {
-let arr = []; 
-let arr1 = []; 
-for (let i = str.length - 1; i >= 0; i --){
-  arr.push(str[i]); 
-  arr1 += str[i]; 
+// function reverseString (str) {
+// let arr = []; 
+// let arr1 = []; 
+// for (let i = str.length - 1; i >= 0; i --){
+//   arr.push(str[i]); 
+//   arr1 += str[i]; 
 
-}
- return arr1; 
+// }
+//  return arr1; 
+// }
+
+// console.log(reverseString("hello")); 
+
+// define a global variable which will hold the word with the greatest number of elements thus far 
+let longestWordThusFar; 
+
+function findLongestWordLength(str) {
+
+  // iterate through the entire string in order to access the length of each word passed in 
+  for ( let i = 0; i < str.length; i++){
+     longestWordThusFar.push(str.length); 
+       
+  } 
+
+  //return the length of the longest word of the string passed in. 
+  return str.length;
 }
 
-console.log(reverseString("hello")); 
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
+console.log(longestWordThusFar); 

@@ -29,5 +29,18 @@
 // console.log(add(1,2)); 
 
 
+function SimpleEvens(num) {
+
+    let strNum = num.toString().split(''); 
+    console.log(strNum.every(isEven)); 
+    
+}
+
+function DashInsert(str){
+    let arr = str.split(""); 
 
 
+    return arr.join(''); 
+}
+
+console.log(DashInsert(123456)); 

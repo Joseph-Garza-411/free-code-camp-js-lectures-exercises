@@ -9,7 +9,7 @@
 //             }
 //         }
 
-const { arrayBuffer } = require("stream/consumers");
+// const { arrayBuffer } = require("stream/consumers");
 
         
 //     //Only change code above this line 
@@ -18,15 +18,15 @@ const { arrayBuffer } = require("stream/consumers");
 
 // multiplyAll([[1,2], [3,4], [5,6,7]]); 
 
-function add(){
-    let sum = 0; 
-    for(let i = 0; i < arguments.length; i++){
-        sum += arguments[i]; 
-    }
-    return sum; 
-}
+// function add(){
+//     let sum = 0; 
+//     for(let i = 0; i < arguments.length; i++){
+//         sum += arguments[i]; 
+//     }
+//     return sum; 
+// }
 
-console.log(add(1,2)); 
+// console.log(add(1,2)); 
 
 
 
